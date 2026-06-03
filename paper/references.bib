@@ -1,0 +1,304 @@
+% references.bib -- compact / bound-preserving advection-diffusion paper
+% NOTE: entries are from working knowledge. Authors/title/venue/year are reliable;
+% VERIFY exact page ranges and DOIs against the publisher before submission.
+% (lele1992 verified against the PDF in this folder.)
+
+% ---- Core compact-scheme reference (verified vs lele-1992.pdf) ----
+@article{lele1992,
+  author  = {Lele, Sanjiva K.},
+  title   = {Compact Finite Difference Schemes with Spectral-like Resolution},
+  journal = {Journal of Computational Physics},
+  volume  = {103},
+  number  = {1},
+  pages   = {16--42},
+  year    = {1992},
+  doi     = {10.1016/0021-9991(92)90324-R}
+}
+
+% ---- Author's grounding paper (ocean tracer transport, 3rd-order upwind) ----
+% VERIFIED against the PDF: Ocean Engng 25(6), 425-442, 1998; PII S0029-8018(97)00008-5;
+% Dept. Civil Engineering, National University of Singapore. Pergamon/Elsevier.
+@article{sankaranarayanan1998,
+  author  = {Sankaranarayanan, S. and Shankar, N. Jothi and Cheong, H. F.},
+  title   = {Three-dimensional finite difference model for transport of conservative pollutants},
+  journal = {Ocean Engineering},
+  volume  = {25},
+  number  = {6},
+  pages   = {425--442},
+  year    = {1998},
+  doi     = {10.1016/S0029-8018(97)00008-5}
+}
+
+% ---- MOOD: a-posteriori optimal-order detection (our limiting strategy) ----
+@article{clain2011mood,
+  author  = {Clain, St{\'e}phane and Diot, St{\'e}phane and Loub{\`e}re, Rapha{\"e}l},
+  title   = {A high-order finite volume method for systems of conservation laws---Multi-dimensional Optimal Order Detection ({MOOD})},
+  journal = {Journal of Computational Physics},
+  volume  = {230},
+  number  = {10},
+  pages   = {4028--4050},
+  year    = {2011},
+  doi     = {10.1016/j.jcp.2011.02.026}
+}
+@article{diot2012mood,
+  author  = {Diot, St{\'e}phane and Clain, St{\'e}phane and Loub{\`e}re, Rapha{\"e}l},
+  title   = {Improved detection criteria for the Multi-dimensional Optimal Order Detection ({MOOD}) on unstructured meshes with very high-order polynomials},
+  journal = {Computers \& Fluids},
+  volume  = {64},
+  pages   = {43--63},
+  year    = {2012},
+  doi     = {10.1016/j.compfluid.2012.05.004}
+}
+
+% ---- Deformational-flow benchmark (our test case) ----
+@article{leveque1996,
+  author  = {LeVeque, Randall J.},
+  title   = {High-resolution conservative algorithms for advection in incompressible flow},
+  journal = {SIAM Journal on Numerical Analysis},
+  volume  = {33},
+  number  = {2},
+  pages   = {627--665},
+  year    = {1996},
+  doi     = {10.1137/0733033}
+}
+
+% ---- Compact-WENO hybrids (closest prior art to "bounded compact") ----
+@article{pirozzoli2002,
+  author  = {Pirozzoli, Sergio},
+  title   = {Conservative hybrid compact-{WENO} schemes for shock-turbulence interaction},
+  journal = {Journal of Computational Physics},
+  volume  = {178},
+  number  = {1},
+  pages   = {81--117},
+  year    = {2002},
+  doi     = {10.1006/jcph.2002.7021}
+}
+@article{ren2003,
+  author  = {Ren, Yu-Xin and Liu, Miao'er and Deng, Hanxin},
+  title   = {A characteristic-wise hybrid compact-{WENO} scheme for solving hyperbolic conservation laws},
+  journal = {Journal of Computational Physics},
+  volume  = {192},
+  number  = {2},
+  pages   = {365--386},
+  year    = {2003},
+  doi     = {10.1016/j.jcp.2003.07.006}
+}
+
+% ---- Bound-/maximum-principle-preserving high-order schemes (novelty positioning) ----
+@article{zhangshu2010,
+  author  = {Zhang, Xiangxiong and Shu, Chi-Wang},
+  title   = {On maximum-principle-satisfying high order schemes for scalar conservation laws},
+  journal = {Journal of Computational Physics},
+  volume  = {229},
+  number  = {9},
+  pages   = {3091--3120},
+  year    = {2010},
+  doi     = {10.1016/j.jcp.2009.12.030}
+}
+@article{zhangshu2011,
+  author  = {Zhang, Xiangxiong and Shu, Chi-Wang},
+  title   = {Maximum-principle-satisfying and positivity-preserving high-order schemes for conservation laws: survey and new developments},
+  journal = {Proceedings of the Royal Society A},
+  volume  = {467},
+  number  = {2134},
+  pages   = {2752--2776},
+  year    = {2011},
+  doi     = {10.1098/rspa.2011.0153}
+}
+
+% ---- Flux-corrected transport (our limiter's ancestor) ----
+@article{zalesak1979,
+  author  = {Zalesak, Steven T.},
+  title   = {Fully multidimensional flux-corrected transport algorithms for fluids},
+  journal = {Journal of Computational Physics},
+  volume  = {31},
+  number  = {3},
+  pages   = {335--362},
+  year    = {1979},
+  doi     = {10.1016/0021-9991(79)90051-2}
+}
+
+% ---- Boundary stability of compact schemes (Lele's stable closures lineage) ----
+@article{carpenter1993,
+  author  = {Carpenter, Mark H. and Gottlieb, David and Abarbanel, Saul},
+  title   = {The stability of numerical boundary treatments for compact high-order finite-difference schemes},
+  journal = {Journal of Computational Physics},
+  volume  = {108},
+  number  = {2},
+  pages   = {272--295},
+  year    = {1993},
+  doi     = {10.1006/jcph.1993.1182}
+}
+
+% ---- Deformational/rotational advection testing (classic) ----
+@article{smolarkiewicz1982,
+  author  = {Smolarkiewicz, Piotr K.},
+  title   = {The multi-dimensional Crowley advection scheme},
+  journal = {Monthly Weather Review},
+  volume  = {110},
+  number  = {12},
+  pages   = {1968--1983},
+  year    = {1982},
+  doi     = {10.1175/1520-0493(1982)110<1968:TMDCAS>2.0.CO;2}
+}
+
+% ---- 3rd-order upwind transport scheme used in the OE-1998 model ----
+@book{kowalik1993,
+  author    = {Kowalik, Zygmunt and Murty, T. S.},
+  title     = {Numerical Modeling of Ocean Dynamics},
+  series    = {Advanced Series on Ocean Engineering},
+  volume    = {5},
+  publisher = {World Scientific},
+  year      = {1993}
+}
+
+% ---- Added after reading the supplied PDFs (2026-06-02) ----
+@article{zhangxiashu2012,
+  author  = {Zhang, Xiangxiong and Xia, Yinhua and Shu, Chi-Wang},
+  title   = {Maximum-Principle-Satisfying and Positivity-Preserving High Order Discontinuous Galerkin Schemes for Conservation Laws on Triangular Meshes},
+  journal = {Journal of Scientific Computing},
+  volume  = {50},
+  number  = {1},
+  pages   = {29--62},
+  year    = {2012},
+  doi     = {10.1007/s10915-011-9472-8}
+}
+@article{huadamsshu2013,
+  author  = {Hu, Xiangyu Y. and Adams, Nikolaus A. and Shu, Chi-Wang},
+  title   = {Positivity-preserving flux limiters for high-order conservative schemes solving compressible {Euler} equations},
+  journal = {Journal of Computational Physics},
+  volume  = {242},
+  pages   = {169--180},
+  year    = {2013},
+  doi     = {10.1016/j.jcp.2013.01.024},
+  note    = {arXiv:1203.1540}
+}
+@article{dzanic2024cbp,
+  author  = {Dzanic, Tarik},
+  title   = {Continuously bounds-preserving discontinuous {Galerkin} methods for hyperbolic conservation laws},
+  journal = {Journal of Computational Physics},
+  volume  = {508},
+  pages   = {113010},
+  year    = {2024},
+  doi     = {10.1016/j.jcp.2024.113010}
+}
+@article{dzanic2024note,
+  author  = {Dzanic, Tarik},
+  title   = {A note on higher-order and nonlinear limiting approaches for continuously bounds-preserving discontinuous {Galerkin} methods},
+  journal = {Journal of Computational Physics},
+  year    = {2024},
+  note    = {follow-up to JCP 508:113010}
+}
+@article{dzanic2023boltzmann,
+  author  = {Dzanic, Tarik and Witherden, Freddie D. and Martinelli, Luigi},
+  title   = {A positivity-preserving and conservative high-order flux reconstruction method for the polyatomic {Boltzmann}--{BGK} equation},
+  journal = {Journal of Computational Physics},
+  year    = {2023},
+  note    = {arXiv:2210.15611}
+}
+
+% ---- Author's JCP paper (track record; same truncation-error + Fourier-analysis methodology) ----
+@article{sankaranarayanan2003,
+  author  = {Sankaranarayanan, S. and French McCay, D.},
+  title   = {Application of a two-dimensional depth-averaged hydrodynamic tidal model},
+  journal = {Ocean Engineering},
+  volume  = {30},
+  number  = {14},
+  pages   = {1807--1832},
+  year    = {2003},
+  doi     = {10.1016/S0029-8018(03)00014-3}
+}
+
+@article{sankaranarayanan2003jcp,
+  author  = {Sankaranarayanan, S. and Spaulding, Malcolm L.},
+  title   = {A study of the effects of grid non-orthogonality on the solution of shallow water equations in boundary-fitted coordinate systems},
+  journal = {Journal of Computational Physics},
+  volume  = {184},
+  number  = {1},
+  pages   = {299--320},
+  year    = {2003},
+  doi     = {10.1016/S0021-9991(02)00042-6}
+}
+
+@article{casulli1990,
+  author  = {Casulli, Vincenzo},
+  title   = {Semi-implicit finite difference methods for the two-dimensional shallow water equations},
+  journal = {Journal of Computational Physics},
+  volume  = {86},
+  number  = {1},
+  pages   = {56--74},
+  year    = {1990},
+  doi     = {10.1016/0021-9991(90)90091-E}
+}
+
+@article{casulli1992,
+  author  = {Casulli, Vincenzo and Cheng, Ralph T.},
+  title   = {Semi-implicit finite difference methods for three-dimensional shallow water flow},
+  journal = {International Journal for Numerical Methods in Fluids},
+  volume  = {15},
+  number  = {6},
+  pages   = {629--648},
+  year    = {1992},
+  doi     = {10.1002/fld.1650150602}
+}
+
+% ---- DIRECT PRIOR ART for "bound-preserving compact" (kills the method-novelty claim) ----
+@article{lixiezhang2018,
+  author  = {Li, Hao and Xie, Shusen and Zhang, Xiangxiong},
+  title   = {A High Order Accurate Bound-Preserving Compact Finite Difference Scheme for Scalar Convection Diffusion Equations},
+  journal = {SIAM Journal on Numerical Analysis},
+  volume  = {56},
+  number  = {6},
+  pages   = {3308--3345},
+  year    = {2018},
+  doi     = {10.1137/18M1208551}
+}
+
+% ---- Cosco Busan oil spill: response and ecological-injury literature ----
+@misc{noaacoscobusan,
+  author       = {{NOAA Office of Response and Restoration}},
+  title        = {Cosco {B}usan Oil Spill},
+  howpublished = {\url{https://response.restoration.noaa.gov/oil-and-chemical-spills/significant-incidents/cosco-busan-oil-spill}},
+  year         = {2007},
+  note         = {accessed 2026}
+}
+
+@article{incardona2012pnas,
+  author  = {Incardona, John P. and Vines, Carol A. and Anulacion, Bernadita F. and Baldwin, David H. and Day, Heather L. and French, Barbara L. and Labenia, Jana S. and Linbo, Tiffany L. and Myers, Mark S. and Olson, O. Paul and Sloan, Catherine A. and Sol, Sean and Griffin, Frederick J. and Menard, Karl and Morgan, Steven G. and West, James E. and Collier, Tracy K. and Ylitalo, Gina M. and Cherr, Gary N. and Scholz, Nathaniel L.},
+  title   = {Unexpectedly high mortality in {P}acific herring embryos exposed to the 2007 {C}osco {B}usan oil spill in {S}an {F}rancisco {B}ay},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume  = {109},
+  number  = {2},
+  pages   = {E51--E58},
+  year    = {2012},
+  doi     = {10.1073/pnas.1108884109}
+}
+
+@article{incardona2012plos,
+  author  = {Incardona, John P. and Vines, Carol A. and Linbo, Tiffany L. and Myers, Mark S. and Sloan, Catherine A. and Anulacion, Bernadita F. and Boyd, Daryle and Collier, Tracy K. and Morgan, Steven and Cherr, Gary N. and Scholz, Nathaniel L.},
+  title   = {Potent phototoxicity of marine bunker oil to translucent herring embryos after prolonged weathering},
+  journal = {PLoS ONE},
+  volume  = {7},
+  number  = {2},
+  pages   = {e30116},
+  year    = {2012},
+  doi     = {10.1371/journal.pone.0030116}
+}
+
+@misc{anthropic2026claude,
+  author       = {{Anthropic}},
+  title        = {Claude {O}pus 4.8 (claude-opus-4-8)},
+  year         = {2026},
+  howpublished = {\url{https://www.anthropic.com/claude}},
+  note         = {Large language model; version/release date to be confirmed by the author}
+}
+
+@inproceedings{beeglekrause2001gnome,
+  author    = {Beegle-Krause, C. J.},
+  title     = {General {NOAA} Oil Modeling Environment ({GNOME}): a new spill trajectory model},
+  booktitle = {International Oil Spill Conference Proceedings},
+  volume    = {2001},
+  pages     = {865--871},
+  year      = {2001},
+  doi       = {10.7901/2169-3358-2001-2-865}
+}

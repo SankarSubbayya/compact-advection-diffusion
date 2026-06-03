@@ -1,0 +1,48 @@
+# --- Copyrighted journal PDFs and compiled PDFs (do NOT publish) ---
+*.pdf
+
+# --- Regenerable / large data (rebuild via the pipeline; see README) ---
+*.npz
+
+# --- Python / OS artifacts ---
+__pycache__/
+*.pyc
+.DS_Store
+
+# --- LaTeX build artifacts ---
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.fff
+*.ttt
+*.lof
+*.lot
+*.toc
+
+# --- superseded single-constituent solver (use gen_currents_mixed.py) ---
+paper/gen_currents_fine.py
+
+# --- TB-Science submission artifacts (separate project; not part of this paper) ---
+proposals/
+tasks/
+
+# --- Internal / non-public working notes ---
+paper/COVER_LETTER.md
+paper/NOTES.md
+paper/related_work.md
+
+# --- elsarticle twin (this repository ships the ASCE version) ---
+paper/manuscript.tex
+
+# --- Dev scratch / R&D scripts (not part of the paper pipeline) ---
+_dev/ckb.py
+_dev/scan.py
+_dev/smoke.py
+_dev/sharp_probe.py
+_dev/local_check*.py
+_dev/study*.py
