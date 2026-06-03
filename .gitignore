@@ -1,3 +1,14 @@
+# --- Secrets / environment files (never publish) ---
+.env
+.env.*
+*.env
+env-file*
+*.key
+*.pem
+*secret*
+*credential*
+*token*
+
 # --- Copyrighted journal PDFs and compiled PDFs (do NOT publish) ---
 *.pdf
 
